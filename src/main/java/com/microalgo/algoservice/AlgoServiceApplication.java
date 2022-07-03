@@ -13,6 +13,7 @@ public class AlgoServiceApplication {
 
 		SpringApplication.run(AlgoServiceApplication.class, args);
 		logger.info("Algo Service Started");
+		logger.info("Develop branch setup");
 	}
 
 }
