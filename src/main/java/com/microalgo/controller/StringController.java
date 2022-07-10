@@ -13,7 +13,7 @@ public class StringController
     @GetMapping(STRING_PING_END_POINT)
     public ResponseEntity<String> pingStringController()
     {
-        ResponseEntity<String> pingResponse=new ResponseEntity<String>(HttpStatus.OK);
+        ResponseEntity<String> pingResponse=new ResponseEntity<>(HttpStatus.OK);
         return pingResponse;
     }
 }
