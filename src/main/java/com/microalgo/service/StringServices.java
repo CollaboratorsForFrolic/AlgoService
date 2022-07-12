@@ -18,6 +18,9 @@ public class StringServices {
         char[] charArray = inputString.toCharArray();
         for(int i =0; i< size/2 ; i++){
             char temp;
+            if(charArray[i] == charArray[size-1-i]){
+                continue;
+            }
             temp = charArray[i];
             charArray[i] = charArray[size-1-i];
             charArray[size-1-i] = temp;

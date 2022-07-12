@@ -44,7 +44,7 @@ class StringServicesTest {
 
     //trying a string containing numbers
     @Test
-    void reverseEmptyStringTest(){
+    void reverseNumericStringTest(){
         //assemble
 
         //assume
@@ -61,7 +61,7 @@ class StringServicesTest {
 
     //trying an empty string
     @Test
-    void reverseNumericStringTest(){
+    void reverseEmptyStringTest(){
         //assemble
 
         //assume
@@ -136,5 +136,40 @@ class StringServicesTest {
         assertEquals(expectedOutput,actualResponse);
 
     }
+
+
+    //trying a string containing special characters
+    @Test
+    void reverseStringWithSpecialCharactersTest(){
+        //assemble
+
+        //assume
+        String inputString = "@#$~ )(*&^%   _+=-";
+        String expectedOutput= "-=+_   %^&*() ~$#@";
+
+        //act
+        String actualResponse = stringServices.reverseString(inputString);
+        //assert
+        assertEquals(expectedOutput,actualResponse);
+
+    }
+
+    //trying a string to check if the code which prevents swapping of similar characters
+    @Test
+    void reverseStringTestWhichPreventsSwappingOfSimilarCharacters(){
+        //assemble
+
+        //assume
+        String inputString = "offo seriously offo";
+        String expectedOutput= "offo ylsuoires offo";
+
+        //act
+        String actualResponse = stringServices.reverseString(inputString);
+        //assert
+        assertEquals(expectedOutput,actualResponse);
+
+    }
+
+
 
 }
