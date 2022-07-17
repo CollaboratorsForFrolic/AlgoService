@@ -10,8 +10,6 @@ import org.springframework.http.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
 
 import static com.microalgo.constants.AlgoServiceConstants.URIConstants.LOCAL_HOST;
 import static com.microalgo.constants.AlgoServiceConstants.URIConstants.*;
