@@ -31,7 +31,7 @@ public class StringControllerIntegrationTest
 
         //act
         HttpStatus actualStatusCode=this.restTemplate
-                        .getForEntity(LOCAL_HOST+ port + STRING_PING_END_POINT, ResponseEntity.class).getStatusCode();
+                        .getForEntity(LOCAL_HOST+ port + STRING_PING_END_POINT, String.class).getStatusCode();
 
         assertEquals(HttpStatus.OK,actualStatusCode);
     }

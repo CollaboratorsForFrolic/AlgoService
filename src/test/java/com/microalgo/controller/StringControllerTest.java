@@ -22,7 +22,7 @@ class StringControllerTest {
         //Assume
         //Nothing to assume or mock
         //Act
-        ResponseEntity<String> responseEntity = stringController.pingStringController();
+        String responseEntity = stringController.pingStringController();
 
         //Assert
         assertEquals(expectedPingResponse.getStatusCode(),HttpStatus.OK);

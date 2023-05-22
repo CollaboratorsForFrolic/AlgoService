@@ -11,9 +11,9 @@ import static com.microalgo.constants.AlgoServiceConstants.URIConstants.STRING_P
 public class StringController
 {
     @GetMapping(STRING_PING_END_POINT)
-    public ResponseEntity<String> pingStringController()
+    public String pingStringController()
     {
         ResponseEntity<String> pingResponse=new ResponseEntity<>(HttpStatus.OK);
-        return pingResponse;
+        return "Response From Algo Service";
     }
 }
